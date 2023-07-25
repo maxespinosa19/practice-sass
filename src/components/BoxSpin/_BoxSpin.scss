@@ -1,0 +1,36 @@
+ * {
+  text-align: center;
+  border: 10px dashed yellow;
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-left: 200px;
+height: 500px;
+
+
+  animation-name: box-spin-animate;
+  animation-duration: 200ms;
+  animation-iteration-count: infinite;
+  transition: 0.3s ease-in-out;
+
+  @keyframes box-spin-animate {
+    0%{
+      transform: rotate(0deg) scale(0.8);
+      background-color: blue;
+      
+    
+    }
+    50%{
+      border-radius: 0%;
+      filter: hue-rotate(100deg);
+    }
+    100%{
+      transform: rotate(360deg);
+      filter:saturate(0.4)
+
+
+    }
+  }
+  
+ 
+}
